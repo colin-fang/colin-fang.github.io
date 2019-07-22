@@ -1,0 +1,66 @@
+<!-- HTML for Colin Fang's third assingment-->
+<html>
+  <head>
+    <title>1v1 dice game
+    </title>
+    <link rel="stylesheet" type="text/css" href="cfang44assign3.css">
+    <script src="cfang44assign3.js"></script>
+  </head>
+
+  <body>
+  
+    <h1>Enter Name Here:</h1>
+    Player 1:<input type="text" id="firstName" value="" onblur="checkName()" /> </br>
+    Player 2:<input type="text" id="secondName" value="" onblur="checkName()" />
+	<!-- above are textboxes where players must enter their names-->
+	
+    <h1>Number of Dice Rolls:</h1>
+    <input type="radio" name="button" id="fiveRoll" value="5" onclick="setValue(this.value)">five rolls</br>
+    <input type="radio" name="button" id="sixRoll" value="6" onclick="setValue(this.value)">six rolls</br>
+    <input type="radio" name="button" id="sevenRoll" value="7" onclick="setValue(this.value)" checked="true">seven rolls</br>
+    <input type="radio" name="button" id="eightRoll" value="8" onclick="setValue(this.value)">eight rolls</br>
+	<!-- above are radio buttons used to select number of turns that the game will consist of-->
+	
+    </br><button type="button" onclick="rollDice()" id="dRoll" disabled=true>Roll Dice</button>
+	<!-- above is button to start the game by rolling the invisible die-->
+	
+    <h2>Dice Number:<span id="diceNumber"></span></h2>
+	<!-- above displays the number on the die after rolling-->
+	
+      <div id="oneFloat">
+        Player one coin choose:</br>
+        <input type="radio" name="oneCoin" id="oneAble" checked=true disabled=true>Penny</br>
+        <input type="radio" name="oneCoin" id="twoAble" disabled=true>Nickel</br>
+        <input type="radio" name="oneCoin" id="threeAble" disabled=true>Dime</br>
+		<!-- radio buttons for choosing value of coin-->
+		
+        <button type="button" id="fourAble" onclick="oneCalc()" disabled=true>Calculate total</button></br>
+		<!-- button to calculate both the turn cent total and the overall cent total-->
+		
+        Player one total this turn:<span id="oneT"></span></br>
+        Player one total:<span id="oneTotal"></span>
+		<!-- above are the spaces for displaying the turn cent total and overall cent total-->
+		
+      </div>
+      <div id="twoFloat">
+        Player two coin choose:</br>
+        <input type="radio" name="twoCoin" id="fiveAble" checked=true disabled=true>Penny</br>
+        <input type="radio" name="twoCoin" id="sixAble" disabled=true>Nickel</br>
+        <input type="radio" name="twoCoin" id="sevenAble" disabled=true>Dime</br>
+		<!-- radio buttons for choosing value of coin-->
+		
+        <button type="button" id="eightAble" onclick="twoCalc()" disabled=true>Calculate total</button></br>
+		<!-- button to calculate both the turn cent total and the overall cent total-->
+		
+        Player two total this turn:<span id="twoT"></span></br>
+        Player two total:<span id="twoTotal"></span>
+		<!-- above are the spaces for displaying the turn cent total and overall cent total-->
+		
+      </div>
+      <h1 id="gratz">
+      </h1>
+	  <!-- large space for displaying game conclusion -->
+	  
+  </body>
+
+</html>
