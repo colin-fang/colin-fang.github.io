@@ -1,0 +1,14 @@
+
+#vid {
+	width: 600px;
+	height: 345px;
+	float: left;
+}
+#description{
+	font-family: "Franklin Gothic Medium","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
+	width: 400px;
+	height: 300px;
+	float: left;
+	background-color: yellow;
+	clear: left;
+}
