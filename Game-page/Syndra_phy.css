@@ -89,8 +89,8 @@
 			  border: 0px;
 	}
 	:-webkit-full-screen #canvas {
-		 width: 75%;
-		 height: 75%;
+		 width: 50%;
+		 height: 50%;
 	}
 	div.gm4html5_div_class
 	{
@@ -123,6 +123,6 @@
 	}
 	/* END - Login Dialog Box */
 	:-webkit-full-screen {
-	   width: 75%;
-	   height: 75%;
+	   width: 50%;
+	   height: 50%;
 	}
