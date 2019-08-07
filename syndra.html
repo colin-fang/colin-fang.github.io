@@ -10,103 +10,123 @@
   <body>
   <!--The top menu bar -->
 	<div class = "topnav">
-	<a href = "home.html"  id = "home">Home</a>
-	<a href = "syndra.html" class = "active" id = "syndra">Syndra</a>
+		<a href = "home.html" class = "active">Home</a>
+		<div class = "drop">
+			<a href = "syndra.html" class = "dropper">Syndra
+				<i class = "fa fa-carent-down"></i>
+			</a>
+			</br></br>
+			<div class = "drop-content">
+				<a href = "#">ph</a>
+				<a href = "#">ph</a>
+				<a href = "#">ph</a>
+			</div>
+		</div>
 	</div>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 	</br>
-	<h1 id = "title" class = "center">Syndra Idea</h1>
-	<div class = "introduction">
-	<p id = "center">Syndra was one of my first League of Legends mains. I fell in love with her strong laning phase and flexible kit 
-	that involves the manipulation of her spheres. However I have since abandoned her due to some crippling weaknesses that she has. 
-	Being an immobile mage in an environment of increasingly more mobile bruisers and assassins, her skillshots are not reliable enough 
-	to keep the enemy at bay. Furthermore her ultimate skill, Unleashed Power, is very difficult to balance due to it being a point and click 
-	nuke. Because of pro play, Syndra's ultimate skill is very weak and heavily diminishes her lane phase. </p>
-	
-	<p class = "center">Throughout my time of playing the game, new mechanics have been introduced time and time again. In particular Xayah's 
-	Blade Caller ability has inspired me to make my own version of Syndra's w. I have also reworked Syndra's ultimate to increase it's versatility 
-	and decrease the oppressive play style.</p>
-	
-	<p class = "center">Below is a small game that I have developed in Gamemaker Studios 2. I was not able to code enemy objects and have them 
-	interact with Syndra or her abilities but I hope it is enough to communicate my vision for Syndra. I believe this is a good direction to take syndra, 
-	helping her against mobile champions, allowing more outplay potential against her damage output and maintaining her overall identity.</p>
+	<div class = "spacer">
+		<b id = "title" class = "center"> Syndra</b>
+		</br>
+		<i id = "subtitle"> Rework Idea </i>
 	</div>
-	</br>
-	
-</div class = "content">
-	<p class = "description">My rework of Syndra's w pulls all existing spheres within a certain range towards her, damaging and slowing 
-	all enemies it passes through and stops when in collision with her. The damage should be low medium base damage with a mediocre scaling 
-	and decrease damage dealt with cosecutive hits. The reason I felt the need to make this change is to replace the old w which was slow and 
-	hard to hit, making it a very clunky skillshot. Additionally, the new w can be used to slow enemies who are chasing Syndra, helping her 
-	escape more mobile champions. The exchange of weak chasing potential for strong engage mitigation is a valuable trade in my opinion.</p>
-	
-	<video class = "vid"  controls> 
-		<source src = "syndra_videos/syndra_w.mp4" type = "video/mp4">
-	your browser does not support the video tag.
-	</video>
-	</br>
-	<p class = "description">My rework of Syndra's r fires 3 short ranged skill shots with a charge system akin to ahri's r. The skillshots 
-	can be fired consecutively without cooldown in between. At the end of each cast, one sphere spawns at the end of animation.
-	This preserves Syndra's identity of being able to nuke someone when landing the q-e.
-	However, this new ultimate requires more commitment from the player and removes moments that feel unfair for the enemy such as flash + r</p>
-	<video class = "vid"  controls> 
-		<source src = "syndra_videos/syndra_r_fast.mp4" type = "video/mp4">
-	your browser does not support the video tag.
-	</video>
-	</br>
-	<p class = "description">My rework of Syndra's r fires 3 short ranged skill shots within a 5 second window similar to ahri's r. 
-	The skillshots can be fired individually in different directions and damages all enemies it passes through. This new r allows for 
-	more versatility especially when paired with her other skills. In terms of damage, this skill should have a high base damage due 
-	to the possibility of missing it as well as helping her lane phase. It should have a low scaling to balance for the late game where the 
-	w ability should be the main damage source.</p>
-	<video class = "vid"  controls> 
-		<source src = "syndra_videos/syndra_r_slow.mp4" type = "video/mp4">
-	your browser does not support the video tag.
-	</video>
-	</br>
-	<p class = "description">Both the new w and r should refresh existing spheres' timers. In my game, the cooldowns for each skill is 
-	set to the in game values at max rank.(q = 6s, w = 8s, e = 12s, r = 80s) Because each cast of the r refreshes and due to the fact 
-	that the r duration is 5 seconds, the longest time a ball can currently be in existence is 6s + 6s + 5s + 6s + 6s = 29s. This is 
-	achieved by q, w after 6s, r after 6s , r after 5s, and because the 8s cd of the w has passed, w for another 6 s. During this 29s 
-	window, q can be cast 7 times. Including the 3 spheres spawned by the ultimate ability, 10 spheres can exist at the same time. 
-	This may actually be a terrifyingly large amount so some numbers may need to be tweaked.</p>
-	<video class = "vid"  controls> 
-		<source src = "syndra_videos/syndra_refresh_cd.mp4" type = "video/mp4">
-	your browser does not support the video tag.
-	</video>
-	</br>
-	<p class = "description">My rework of Syndra's w allows a powerful interaction of e and w being used in quick succession, allowing 
-	for a damage follow up after landing a stun. This should be her staple burst combo pre 6 or while her ultimate is down.</p>
-	<video class = "vid"  controls>
-		<source src = "syndra_videos/syndra_e_w.mp4" type = "video/mp4">
-	your browser does not support the video tag.
-	</video>
-	</br>
-	<p class = "description">My rework of Syndra's w also allows her e to cancel the w's trajectory to earlier launch the spheres forward. 
-	This should be used after setting up multiple spheres behind enemy lines either with multiple q's or the ultimate ability for 
-	a strong aoe followed up by multiple stuns. This should be her main late game teamfighting combo.</p>
-	<video class = "vid"  controls> 
-		<source src = "syndra_videos/syndra_w_e.mp4" type = "video/mp4">
-	your browser does not support the video tag.
-	</video>
-	</br>
-	<p class = "description">In this video, a glimpse of the full potential of syndra's kit is demonstrated. Both q and r should be used to 
-	spawn spheres and set up for large aoe stuns with e and damage with w. In the current version of Syndra's ultimate ability a 
-	strong emphasis on the idea that syndra's other abilities build up the damage of her final burst. I have preserved this identity 
-	by shifting it into the w and to a lesser extent, the e. The build up of damage in her ultimate has now been shifted into her ultimate 
-	building up the damage of the w. Additionally, her ultimate also builds up the area of effect of the e.</p>
-	<video class = "vid"  controls> 
-		<source src = "syndra_videos/syndra_full_combo.mp4" type = "video/mp4">
-	your browser does not support the video tag.
-	</video>
-	</div>
-	<div class = "conclusion">
-	<p>According to Syndra's lore, she is a near omnipotent woman who has freed herself from the shackles and discrimination 
-	of both her master and society. However, Syndra is increasingly less powerful and more trapped due to the rise in damage and mobility 
-	in the current League of Legends environment. Syndra currently feels bogged down by her demanding skillshots and lack of mobility and damage. 
-	While creating this passion project of mine, my goal was to make her feel like she has more options, giving the player more freedom of expression 
-	and make her feel very powerful within her own space, thus discouraging bruiser and assassin type champions from engaging her without 
-	making her too safe.<p>
+	<div class = "wrapper">
+			<div class = "introduction">
+				<p >Syndra was one of my first League of Legends mains. I fell in love with her strong laning phase and flexible kit 
+				that involves the manipulation of her spheres. However I have since abandoned her due to some crippling weaknesses that she has. 
+				Being an immobile mage in an environment of increasingly more mobile bruisers and assassins, her skillshots are not reliable enough 
+				to keep the enemy at bay. Furthermore her ultimate skill, Unleashed Power, is very difficult to balance due to it being a point and click 
+				nuke. Because of pro play, Syndra's ultimate skill is very weak and heavily diminishes her lane phase. </p>
+				
+				<p >Throughout my time of playing the game, new mechanics have been introduced time and time again. In particular, Xayah's 
+				Blade Caller ability has inspired me to make my own version of Syndra's w. I have also reworked Syndra's ultimate to increase it's versatility 
+				and decrease the oppressive play style.</p>
+				
+				<p>Below is a small game that I have developed in Gamemaker Studios 2. I was not able to code enemy objects and have them 
+				interact with Syndra or her abilities but I hope it is enough to communicate my vision for Syndra. I believe this is a good direction to take syndra, 
+				helping her against mobile champions, allowing more outplay potential against her damage output and maintaining her overall identity.</p>
+			</div>
+		</br>
+		
+		<div class = "content">
+			<p class = "description">My rework of Syndra's w pulls all existing spheres within a certain range towards her, damaging and slowing 
+			all enemies it passes through and stops when in collision with her. The damage should be low medium base damage with a mediocre scaling 
+			and decrease damage dealt with cosecutive hits. The reason I felt the need to make this change is to replace the old w which was slow and 
+			hard to hit, making it a very clunky skillshot. Additionally, the new w can be used to slow enemies who are chasing Syndra, helping her 
+			escape more mobile champions. The exchange of weak chasing potential for strong engage mitigation is a valuable trade in my opinion.</p>
+			
+			<video class = "vid"  controls> 
+				<source src = "syndra_videos/syndra_w.mp4" type = "video/mp4">
+			your browser does not support the video tag.
+			</video>
+			</br>
+			<p class = "description">My rework of Syndra's r fires 3 short ranged skill shots with a charge system akin to ahri's r. The skillshots 
+			can be fired consecutively without cooldown in between. At the end of each cast, one sphere spawns at the end of animation.
+			This preserves Syndra's identity of being able to nuke someone when landing the q-e.
+			However, this new ultimate requires more commitment from the player and removes moments that feel unfair for the enemy such as flash + r</p>
+			<video class = "vid"  controls> 
+				<source src = "syndra_videos/syndra_r_fast.mp4" type = "video/mp4">
+			your browser does not support the video tag.
+			</video>
+			</br>
+			<p class = "description">My rework of Syndra's r fires 3 short ranged skill shots within a 5 second window similar to ahri's r. 
+			The skillshots can be fired individually in different directions and damages all enemies it passes through. This new r allows for 
+			more versatility especially when paired with her other skills. In terms of damage, this skill should have a high base damage due 
+			to the possibility of missing it as well as helping her lane phase. It should have a low scaling to balance for the late game where the 
+			w ability should be the main damage source.</p>
+			<video class = "vid"  controls> 
+				<source src = "syndra_videos/syndra_r_slow.mp4" type = "video/mp4">
+			your browser does not support the video tag.
+			</video>
+			</br>
+			<p class = "description">Both the new w and r should refresh existing spheres' timers. In my game, the cooldowns for each skill is 
+			set to the in game values at max rank.(q = 6s, w = 8s, e = 12s, r = 80s) Because each cast of the r refreshes and due to the fact 
+			that the r duration is 5 seconds, the longest time a ball can currently be in existence is 6s + 6s + 5s + 6s + 6s = 29s. This is 
+			achieved by q, w after 6s, r after 6s , r after 5s, and because the 8s cd of the w has passed, w for another 6 s. During this 29s 
+			window, q can be cast 7 times. Including the 3 spheres spawned by the ultimate ability, 10 spheres can exist at the same time. 
+			This may actually be a terrifyingly large amount so some numbers may need to be tweaked.</p>
+			<video class = "vid"  controls> 
+				<source src = "syndra_videos/syndra_refresh_cd.mp4" type = "video/mp4">
+			your browser does not support the video tag.
+			</video>
+			</br>
+			<p class = "description">My rework of Syndra's w allows a powerful interaction of e and w being used in quick succession, allowing 
+			for a damage follow up after landing a stun. This should be her staple burst combo pre 6 or while her ultimate is down.</p>
+			<video class = "vid"  controls>
+				<source src = "syndra_videos/syndra_e_w.mp4" type = "video/mp4">
+			your browser does not support the video tag.
+			</video>
+			</br>
+			<p class = "description">My rework of Syndra's w also allows her e to cancel the w's trajectory to earlier launch the spheres forward. 
+			This should be used after setting up multiple spheres behind enemy lines either with multiple q's or the ultimate ability for 
+			a strong aoe followed up by multiple stuns. This should be her main late game teamfighting combo.</p>
+			<video class = "vid"  controls> 
+				<source src = "syndra_videos/syndra_w_e.mp4" type = "video/mp4">
+			your browser does not support the video tag.
+			</video>
+			</br>
+			<p class = "description">In this video, a glimpse of the full potential of syndra's kit is demonstrated. Both q and r should be used to 
+			spawn spheres and set up for large aoe stuns with e and damage with w. In the current version of Syndra's ultimate ability a 
+			strong emphasis on the idea that syndra's other abilities build up the damage of her final burst. I have preserved this identity 
+			by shifting it into the w and to a lesser extent, the e. The build up of damage in her ultimate has now been shifted into her ultimate 
+			building up the damage of the w. Additionally, her ultimate also builds up the area of effect of the e.</p>
+			<video class = "vid"  controls> 
+				<source src = "syndra_videos/syndra_full_combo.mp4" type = "video/mp4">
+			your browser does not support the video tag.
+			</video>
+		</div>
+		</br> </br>
+		<div class = "conclusion">
+			<p>According to Syndra's lore, she is a near omnipotent woman who has freed herself from the shackles and discrimination 
+			of both her master and society. However, Syndra is increasingly less powerful and more trapped due to the rise in damage and mobility 
+			in the current League of Legends environment. Syndra currently feels bogged down by her demanding skillshots and lack of mobility and damage. 
+			While creating this passion project of mine, my goal was to make her feel like she has more options, giving the player more freedom of expression. 
+			I also wanted to make her feel very powerful within her own space without making her too safe, thus discouraging bruiser and assassin type champions 
+			without shutting them down.<p>
+		</div>
+		<div class = "footer">
+			<!-- empty space -->
+		</div>
 	</div>
   </body>
 
