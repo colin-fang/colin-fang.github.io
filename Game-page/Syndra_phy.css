@@ -81,12 +81,14 @@
 	
 	
 	canvas {
-			  image-rendering: optimizeSpeed;
-			  -webkit-interpolation-mode: nearest-neighbor;
-			  -ms-touch-action: none;
-			  margin: auto;
-			  padding: 0px;
-			  border: 0px;
+		  image-rendering: optimizeSpeed;
+		  -webkit-interpolation-mode: nearest-neighbor;
+		  -ms-touch-action: none;
+		  margin: auto;
+		  padding: 0px;
+		  border: 0px;
+		width:50%;
+		height: 50%;
 	}
 	:-webkit-full-screen #canvas {
 		 width: 50%;
