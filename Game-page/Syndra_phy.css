@@ -128,3 +128,22 @@
 	   width: 50%;
 	   height: 50%;
 	}
+
+
+
+/*intro section*/
+.spacer{
+	height: 200px;	
+}
+.introduction{
+	background-color: #d2d2d2;
+	overflow:hidden;
+	border-style: solid;
+	border-color: #CC99FF;
+	width: 90%;
+	margin: auto;
+}
+.introduction p{
+	text-align: justify;
+	padding: 0px 100px;
+	font-size: 20px;
