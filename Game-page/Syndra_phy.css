@@ -86,6 +86,7 @@
 		  -ms-touch-action: none;
 		  margin: 0 auto;
 		  padding: 0px;
+		padding-left: 100px;
 		  border: 0px;
 		width:50%;
 		height: 50%;
