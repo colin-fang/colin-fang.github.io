@@ -4,6 +4,11 @@
 	  margin: auto;
 	  padding: 0px;
 	  border: 0px;
+		  
+	background-color: black;
+	background-image: url("https://lolstatic-a.akamaihd.net/game-info/1.1.9/images/champion/backdrop/bg-syndra.jpg");
+	opacity: 1;
+	background-repeat: repeat-x;
 	}
 	
 	/*top navigation bar */
