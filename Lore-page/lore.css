@@ -116,6 +116,7 @@ img{
 	width: 50%;
 	height: 50%;
 	float: right;
+	display: block;
 }
 .content{
 	font-family: Arial, Helvetica, sans-serif;
