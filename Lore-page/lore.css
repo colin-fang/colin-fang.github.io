@@ -113,10 +113,9 @@ body {
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 /*The middle section */
 img{
-	width: 50%;
-	height: 50%;
+	width: auto;
+	height: auto;
 	float: right;
-	display: block;
 }
 .content{
 	font-family: Arial, Helvetica, sans-serif;
