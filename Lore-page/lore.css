@@ -115,12 +115,9 @@ body {
 }
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 /*The middle section */
-.vid {
-	width: 45%;
-	height: 60%;
-	text-align: center;
-	display: inline-block;
-	clear:right;
+img{
+	size: 50%;
+	float: right;
 }
 .description{
 	width: 600px;
