@@ -96,9 +96,6 @@ body {
 .spacer{
 	height:400px;
 }
-.wrapper{
-	margin: auto;
-}
 /*The introduction section */
 .introduction{
 	background-color: #d2d2d2;
@@ -116,15 +113,12 @@ body {
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 /*The middle section */
 img{
-	size: 50%;
+	width: 50%;
+	height: 50%;
 	float: right;
 }
-.description{
-	width: 600px;
-	display: inline-block;
-	text-align: justify;
-}
 .content{
+	font-family: Arial, Helvetica, sans-serif;
 	margin: auto;
 	border-style: solid;
 	border-color: CC99FF;
@@ -142,6 +136,7 @@ img{
 	width: 90%;
 }
 .conclusion p{
+	font-family: Arial, Helvetica, sans-serif;
 	text-align: justify;
 	padding: 0px 100px;
 }
