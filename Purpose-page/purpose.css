@@ -97,6 +97,9 @@ body {
 	height:400px;
 }
 /*The introduction section */
+h2{
+	text-align: center;	
+}
 .introduction{
 	background-color: #d2d2d2;
 	overflow:hidden;
