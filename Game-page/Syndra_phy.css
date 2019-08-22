@@ -57,6 +57,7 @@
 }
 
 .drop-content {
+	top:3.5em;
 	 display: none;
 	 position: absolute;
 	 background-color: #f9f9f9;
