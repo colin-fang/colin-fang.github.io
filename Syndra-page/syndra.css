@@ -151,6 +151,7 @@ body {
 .conclusion p{
 	text-align: justify;
 	padding: 0px 100px;
+	font-size:20;
 }
 .footer {
 	height: 100px;
