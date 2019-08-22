@@ -97,9 +97,6 @@ body {
 	height:400px;
 }
 /*The introduction section */
-.center{
-	text-align: center;	
-}
 .introduction{
 	background-color: #d2d2d2;
 	overflow:hidden;
@@ -107,6 +104,9 @@ body {
 	border-color: #CC99FF;
 	width: 90%;
 	margin: auto;
+}
+.introduction h2{
+	text-align: center;	
 }
 .introduction p{
 	text-align: justify;
