@@ -76,7 +76,7 @@ body {
 }
 
 .container{
-	background-color: #444444;
+	background-color: #cccccc;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -89,7 +89,7 @@ body {
 	top: 20%;
 	width: 400px;
 	height: 300px;
-	background-color: #444444;
+	background-color: #cccccc;
 	text-align: center;
 }
 
