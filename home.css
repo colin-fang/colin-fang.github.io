@@ -2,6 +2,10 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("Blurred-Background-Sunset-3c-Free.jpg");
+	background-repeat: repeat-x;
+	opacity: 1;
+	background-color: #556D79;
 }
 
 /*top navigation bar */
