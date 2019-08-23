@@ -76,6 +76,7 @@ body {
 }
 
 .container{
+	background-color: #444444;
     margin: 0;
     position: absolute;
     top: 50%;
