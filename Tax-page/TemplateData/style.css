@@ -60,7 +60,7 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #007DDD;
+  background-color: #007ddd;
   color: white;
 }
 
