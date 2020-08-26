@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Tax101 Gamification</title>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+    var unityInstance = UnityLoader.instantiate("unityContainer", "Build/build.json");
+    </script>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+  </head>
+
+  <body onresize="resizeContainer()">
+    <div id="unityContainer" style="width: 800; height: 600; margin: 0; padding: 0;"></div>
+    <script>
+        var unityContainer = document.getElementById("unityContainer");
+        var height = 600;
+        var width = 800;
+        var ratio = height / width;
+        resizeContainer();
+
+        function resizeContainer() {
+            if (window.innerHeight >= height && window.innerWidth >= width) {
+                unityContainer.style.height = height + "px";
+                unityContainer.style.width = width + "px";
+            }
+            else {
+                if (window.innerWidth < width && window.innerHeight >= height) {
+                    maxWidth();
+                }
+                else if (window.innerHeight < height && window.innerWidth >= width) {
+                    maxHeight();
+                }
+                else {
+                    maxHeightAndWidth();
+                }
+            }
+        }
+
+        function maxHeight() {
+            unityContainer.style.height = "100vh";
+            unityContainer.style.width = 100 / ratio + "vh";
+        }
+
+        function maxWidth() {
+            unityContainer.style.width = "100vw";
+            unityContainer.style.height = 100 * ratio + "vw";
+        }
+
+        function maxHeightAndWidth() {
+            var windowRatio = window.innerHeight / window.innerWidth;
+            if (windowRatio >= ratio) {
+                maxWidth();
+            }
+            else {
+                maxHeight();
+            }
+        }
+    </script>
+  </body>
+
+</html>
